@@ -65,7 +65,8 @@ WellTrack/
 ---
 
 ## 🧑‍💻 Author
-**Daksh Kaushik**  
-[GitHub Profile](https://github.com/dakshk0018)  
+**Anurag sharma
+**  
+[GitHub Profile](https://github.com/techbyanurag)  
 
 ---
