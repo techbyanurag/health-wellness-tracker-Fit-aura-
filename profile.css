@@ -1,0 +1,268 @@
+/* ---------- Global ---------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+/* ✅ Home Button */
+.home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #00ffcc;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.home-btn:hover {
+    background: #00e6b8;
+    transform: scale(1.05);
+}
+
+/* ---------- Profile Box ---------- */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.profile-box {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #00ffcc;
+    max-width: 420px;
+    width: 100%;
+    text-align: left;
+}
+
+.profile-box h2 {
+    text-align: center;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+.profile-box label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+}
+
+.profile-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    background: #111;
+    color: #fff;
+    box-shadow: inset 0 0 5px #00ffcc;
+}
+
+.profile-box button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background: #00ffcc;
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+.profile-box button:hover {
+    background: #00e6b8;
+    transform: scale(1.05);
+}
+
+.success-msg {
+    color: #4cff8f;
+    text-align: center;
+    margin-top: 10px;
+}
+.error-msg {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ---------- Hamburger ---------- */
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+}
+.hamburger span {
+    display: block;
+    height: 4px;
+    margin: 5px 0;
+    background: #4cff8f;
+    border-radius: 2px;
+    transition: 0.4s;
+    box-shadow: 0 0 8px #4cff8f;
+}
+.hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* ---------- Dropdown ---------- */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(76, 255, 143, 0.3);
+    min-width: 140px;
+    z-index: 998;
+}
+.dropdown.show { display: block; }
+
+.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.dropdown li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dropdown li:last-child { border-bottom: none; }
+
+.dropdown a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #eee;
+    transition: background 0.2s;
+}
+.dropdown a:hover {
+    background: rgba(76, 255, 143, 0.2);
+    border-radius: 8px;
+}
+/* ---------- Submit Button ---------- */
+.submit-btn {
+  display: inline-block;
+  text-decoration: none;           /* remove link underline */
+  background: linear-gradient(90deg,#00ffcc,#4cff8f);
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 30px;
+  margin-top: 20px;
+  border-radius: 50px;             /* pill shape */
+  cursor: pointer;
+  box-shadow: 0 0 12px #4cff8f, 0 0 20px rgba(76,255,143,0.5);
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(90deg,#4cff8f,#00ffcc);
+  box-shadow: 0 0 18px #4cff8f, 0 0 28px rgba(76,255,143,0.7);
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0 10px #4cff8f;
+}
+/* ---------- Footer ---------- */
+.footer {
+  background: linear-gradient(135deg, #111, #222, #111);
+  padding: 40px 20px 20px 20px;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+  border-top: 3px solid #4cff8f;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+}
+
+.footer-section h3 {
+  color: #4cff8f;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #4cff8f;
+}
+
+.footer-section p, 
+.footer-section li {
+  font-size: 0.95em;
+  margin: 5px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4cff8f;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0.8);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.85em;
+  color: #777;
+}

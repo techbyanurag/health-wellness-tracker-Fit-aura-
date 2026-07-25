@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health & Fitness Tracker – Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn">Home</a>
+
+    <h1>WellTrack</h1>
+    <h2>Your personal wellness companion</h2>
+</header>
+
+    <div class="login-container">
+        <form id="loginForm" class="login-box">
+            <h3>Login to your account</h3>
+            
+            <label for="username">Username / Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter username or email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <button type="submit">Login</button>
+
+            <p class="extra">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            <p id="error" class="error-msg"></p>
+        </form>
+    </div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About WellTrack</h3>
+      <p>WellTrack helps you monitor your fitness, steps, BMI, and calories burned. Stay consistent, stay healthy!</p>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: support@welltrack.com</p>
+      <p>Phone: +91 1234567890</p>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="https://i.imgur.com/7k5S6Xv.png" alt="Facebook"></a>
+        <a href="#"><img src="https://i.imgur.com/0kTn1Wd.png" alt="Twitter"></a>
+        <a href="#"><img src="https://i.imgur.com/6C1QfT1.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 WellTrack. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="login.js"></script>  
+</body>
+</html>

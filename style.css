@@ -1,0 +1,140 @@
+/* ---------- Global ---------- */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #000, #1a1a1a);
+  color: #f0f0f0;
+}
+
+/* ---------- Header ---------- */
+header {
+  width: 100%;
+  padding: 15px 50px;
+  background: linear-gradient(90deg, #111, #222);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #00ffcc;
+  letter-spacing: 2px;
+}
+
+.login-btn {
+  background: #00ffcc;
+  color: #000;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #00e6b8;
+  transform: scale(1.05);
+}
+
+/* ---------- Info Tab ---------- */
+#info-tab {
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #00ffcc;
+}
+
+p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+/* ---------- Footer ---------- */
+.footer {
+  background: linear-gradient(135deg, #111, #222, #111);
+  padding: 40px 20px 20px 20px;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+  border-top: 3px solid #4cff8f;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+}
+
+.footer-section h3 {
+  color: #4cff8f;
+  margin-bottom: 10px;
+  text-shadow: 0 0 8px #4cff8f;
+}
+
+.footer-section p, 
+.footer-section li {
+  font-size: 0.95em;
+  margin: 5px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #4cff8f;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0.8);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  filter: brightness(1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.85em;
+  color: #777;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WellTrack – Health Tracker</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+<div class="container">
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <h1>WellTrack</h1>
+    <h2>Health & Activity Tracking</h2>
+
+    <!-- Hamburger Menu -->
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="dropdown" id="dropdown">
+      <ul>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== User Info & Fitness Tip ===== -->
+  <div class="info-section">
+    <div class="user-info">
+      <!-- JS will fill this -->
+    </div>
+
+    <article class="fitness-article">
+      <h2>Daily Fitness Tip</h2>
+      <p>
+        Consistency is key to achieving your health goals.
+        Aim for at least 30 minutes of moderate exercise such as brisk walking,
+        cycling or swimming. Stay hydrated.
+      </p>
+    </article>
+  </div>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main">
+  <section class="feature">
+    <h2>Activity Tracking</h2>
+    <p>Check your daily steps and exercise routine easily.</p>
+
+    <div class="activity-widgets">
+  <!-- Calories Widget -->
+  <div class="civ-widget">
+    <h3>CALORIES BURNED</h3>
+    <div class="civ-circle" id="calorieCircle">
+      <span class="civ-inner" id="calorieLabel">0 kcal</span>
+    </div>
+  </div>
+
+  <!-- BMI Widget -->
+  <div class="bmi-widget">
+    <h3>BMI</h3>
+    <div class="bmi-bar-container">
+      <div class="bmi-bar" id="bmiBar"></div>
+      <div class="bmi-label" id="bmiLabel">0</div>
+    </div>
+    <div class="bmi-scale">
+      <span>Under</span>
+      <span>Normal</span>
+      <span>Over</span>
+      <span>Obese</span>
+    </div>
+  </div>
+
+  <!-- Steps Widget -->
+  <div class="steps-widget">
+    <h3>STEPS</h3>
+    <div class="steps-circle" id="stepsCircle">
+      <span class="steps-inner" id="stepsLabel">0 steps</span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About WellTrack</h3>
+      <p>WellTrack helps you monitor your fitness, steps, BMI, and calories burned. Stay consistent, stay healthy!</p>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: support@welltrack.com</p>
+      <p>Phone: +91 1234567890</p>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><img src="https://i.imgur.com/7k5S6Xv.png" alt="Facebook"></a>
+        <a href="#"><img src="https://i.imgur.com/0kTn1Wd.png" alt="Twitter"></a>
+        <a href="#"><img src="https://i.imgur.com/6C1QfT1.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 WellTrack. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+</div>
+
+<!-- External JS -->
+<script src="home.js"></script>
+</body>
+</html>
